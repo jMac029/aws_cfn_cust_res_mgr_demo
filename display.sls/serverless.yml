@@ -3,7 +3,7 @@ plugins:
   - serverless-s3-sync
 custom:
   s3Sync:
-    - bucketName: ${self:service}-${self:provider.stage}-static-site
+    - bucketName: ${self:service}-${self:provider.stage}-jmacs-static-site
       localDir: static
 provider:
   name: aws
@@ -37,7 +37,7 @@ resources:
       Type: AWS::S3::Bucket
       Properties:
         AccessControl: PublicRead
-        BucketName: ${self:service}-${self:provider.stage}-static-site
+        BucketName: ${self:service}-${self:provider.stage}-jmacs-static-site
         WebsiteConfiguration:
           IndexDocument: index.html
     StaticSiteS3BucketPolicy:
