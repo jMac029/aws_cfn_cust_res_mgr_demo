@@ -10,24 +10,24 @@ stacks:
     template_path: templates/icon.yaml
     variables:
       << : *common_parameters
-      Type: bomb
+      Type: hammer
   widget2:
     template_path: templates/icon.yaml
     variables:
       << : *common_parameters
-      Type: squid
+      Type: hour_glass
   widget3:
     template_path: templates/icon.yaml
     variables:
       << : *common_parameters
-      Type: crown
+      Type: tag
   widget4:
     template_path: templates/icon.yaml
     variables:
       << : *common_parameters
-      Type: trash
+      Type: screen
   widget5:
     template_path: templates/icon.yaml
     variables:
       << : *common_parameters
-      Type: head
+      Type: construction
